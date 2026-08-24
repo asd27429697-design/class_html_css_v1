@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>축구 스코어</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: green;
+        height: 100vh;
+      }
+
+      /* 스코어보드 */
+      .score {
+        width: 400px;
+        height: 150px;
+        background-color: white;
+
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+
+      h1 {
+        position: absolute;
+        top: 10px;
+        left: 130px;
+      }
+
+      .brazil {
+        position: absolute;
+        top: 80px;
+        left: 50px;
+      }
+
+      .score-number {
+        position: absolute;
+        top: 75px;
+        left: 180px;
+      }
+
+      .germany {
+        position: absolute;
+        top: 80px;
+        right: 50px;
+      }
+
+      .live {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="score">
+      <h1>경기 결과</h1>
+
+      <div class="brazil">브라질</div>
+
+      <div class="score-number">2 : 1</div>
+
+      <div class="germany">독일</div>
+
+      <div class="live">LIVE</div>
+    </div>
+  </body>
+</html>
