@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 공백 없이 바로 붙이면 AND 조건 : 복합선택자 */
+      .container.row {
+        display: flex;
+        border: 2px solid green;
+        padding: 10px;
+        margin-bottom: 10px;
+        flex-direction: row;
+      }
+
+      .container.column {
+        display: flex;
+        border: 2px solid green;
+        padding: 10px;
+        margin-bottom: 10px;
+        flex-direction: column;
+      }
+
+      .container.row-reverse {
+        display: flex;
+        border: 2px solid green;
+        padding: 10px;
+        margin-bottom: 10px;
+        flex-direction: row-reverse;
+      }
+
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: aquamarine;
+        margin: 5px;
+        border: 2px solid black;
+        text-align: center;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>flex-direction:row</h3>
+    <div class="container row">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+    <h3>flex-direction:column</h3>
+    <div class="container column">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+    <h3>flex-direction:row-reverse</h3>
+    <div class="container row-reverse">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </body>
+</html>
